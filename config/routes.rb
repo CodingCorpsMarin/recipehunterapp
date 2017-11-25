@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'recipes/index'
 
   post 'recipes/index'
-  # match '/search', to: "recipes#search", via: "post"
+  
 
   root 'recipes#index'
 
