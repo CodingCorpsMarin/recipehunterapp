@@ -8,6 +8,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+ 
+ <%= form_tag recipes_index_path do %>
+  <p>
+    <%= text_field_tag :search %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
 
 <%= yield %>
 
