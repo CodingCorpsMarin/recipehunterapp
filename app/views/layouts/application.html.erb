@@ -8,12 +8,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
- <h1 id="header"> Recipe Hunter App </h1>
- <%= form_tag recipes_index_path do %>
-  <p id="search">
-    <%= text_field_tag :search %>
-    <%= submit_tag "Search", :name => nil, :class => "button"%>
-  </p>
+	<div class="headers">
+		<div id="header-image">
+			<%= image_tag("wreath-grey.jpg") %>
+		</div>
+		<div id="header-text">
+	 	<h1> Recipe Hunter App </h1>
+		</div>
+	</div>
+	 <%= form_tag recipes_index_path do %>
+	  <p id="search">
+	    <%= text_field_tag :search %>
+	    <%= submit_tag "Search", :name => nil, :class => "button"%>
+	  </p>
 <% end %>
 
 <%= yield %>

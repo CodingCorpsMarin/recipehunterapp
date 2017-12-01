@@ -14,14 +14,18 @@
  *= require_self
  */
 body {
-	background-color: LightGray;
+	background-color: #9D9D9D;
 }
-#header {
+.headers {
 	color: red;
 	text-align: center;
-	
+	background-repeat: no-repeat;
 	font-size: 500%;
 	text-shadow: 5px 3px white;
+
+	/*background: url(wreath.jpg) no-repeat center fixed;
+	/*background-size: ;*/
+	background-repeat: no-repeat;
 }
 
 .button {
